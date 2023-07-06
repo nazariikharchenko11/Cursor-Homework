@@ -427,6 +427,7 @@ body {
 }
 
 .eighth_cookie_banner button {
+  cursor: pointer;
   margin-left: 135px;
   border: 0;
   padding: 8px;
@@ -438,5 +439,4 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  cursor: pointer;
 }
