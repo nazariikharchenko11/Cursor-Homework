@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 500px;
+  background: #ed4c5c;
+}
+
+.main__container {
+  width: 1059px;
+  margin: 0 auto;
+}
+
+.main__container__bloc {
+  float: left;
+  display: flow-root;
+  width: 50%;
+}
+
+.main__container__bloc h1 {
+  width: 445px;
+  height: 107px;
+  margin-top: 122px;
+  color: #fff;
+  font-size: 36px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main__container__bloc p {
+  width: 445px;
+  height: 64px;
+  margin-top: 24px;
+  color: #fff;
+  text-align: justify;
+  font-size: 14px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.main__row {
+  width: 134px;
+  display: flow-root;
+}
+
+.main__col {
+  margin-top: 40px;
+  float: left;
+  width: 33.33333%;
+}
+
+.img_playstore,
+.img_appstore {
+  width: 32px;
+  height: 32px;
+}
+
+.img_windows {
+  width: 24px;
+  height: 24px;
+  margin-top: 4px;
+}
+
+.main_image {
+  margin-top: 94px;
+}
+
+section {
+  width: 100%;
+  height: 500px;
+  background-color: #ffffff;
+}
+
+.section__container {
+  width: 1099px;
+  margin: 0 auto;
+}
+
+.section__container__bloc {
+  float: left;
+  display: flow-root;
+  width: 50%;
+  margin-top: 117px;
+}
+
+.section__container__bloc h2 {
+  width: 445px;
+  height: 107px;
+  color: #000;
+  font-size: 36px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.section__container__bloc p {
+  width: 434px;
+  height: 64px;
+  color: #000;
+  text-align: justify;
+  font-size: 14px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.input_first_name {
+  width: 255px;
+  height: 60px;
+  padding: 21px 31px 20px 31px;
+  border-radius: 6px;
+  border: 1px solid var(--gray-1, #333);
+  color: rgba(19, 39, 67, 0.5);
+  font-size: 16px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input_last_name {
+  width: 250px;
+  height: 60px;
+  margin-left: 30px;
+  padding: 21px 31px 20px 31px;
+  border-radius: 6px;
+  border: 1px solid var(--gray-1, #333);
+  color: rgba(19, 39, 67, 0.5);
+  font-size: 16px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input_phone_number {
+  width: 540px;
+  height: 60px;
+  margin-top: 24px;
+  padding: 21px 31px 20px 31px;
+  border-radius: 6px;
+  border: 1px solid var(--gray-1, #333);
+  color: rgba(19, 39, 67, 0.5);
+  font-size: 16px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.select {
+  width: 540px;
+  height: 60px;
+  margin-top: 24px;
+  padding: 21px 31px 20px 31px;
+  border-radius: 6px;
+  border: 1px solid var(--gray-1, #333);
+  color: rgba(19, 39, 67, 0.5);
+  font-size: 16px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+form button {
+  width: 160px;
+  height: 50px;
+  margin-top: 27px;
+  border-radius: 6px;
+  border: 1.5px solid #ed4c5c;
+  background: #ed4c5c;
+  color: #fff;
+  font-size: 14px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+footer {
+  width: 100%;
+  height: 435px;
+}
+
+.footer__container {
+  width: 1078px;
+  margin: 0 auto;
+}
+
+.footer__container__bloc {
+  float: left;
+  display: flow-root;
+  width: 25%;
+  margin-top: 85px;
+}
+
+.footer__container__bloc h3 {
+  color: #101010;
+  font-size: 18px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.footer__container__bloc p {
+  margin-top: 33px;
+  width: 254px;
+  color: #101010;
+  font-size: 12px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.footer__container__bloc ul {
+  margin-top: 33px;
+  list-style-type: none;
+  width: 254px;
+  color: #000;
+  font-size: 12px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+
+.footer__container__bloc a {
+  display: inline-block;
+  margin-top: 33px;
+  text-decoration: none;
+  color: #101010;
+  font-size: 12px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer__row {
+  width: 66px;
+  display: flow-root;
+}
+
+.footer__col {
+  margin-top: 20px;
+  float: left;
+  width: 33.33333%;
+}
+
+.footer__image {
+  margin-top: 33px;
+  width: 216px;
+  height: 31px;
+}
