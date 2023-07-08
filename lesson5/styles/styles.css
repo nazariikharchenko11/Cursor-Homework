@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #323232;
+}
+
+.wrapper {
+  width: 90%;
+  height: 600px;
+  margin: 90px 0 0 50px;
+  height: auto;
+}
+
+.table-1 {
+  width: 60%;
+  margin-bottom: 32px;
+  border: 1.5px solid #464646;
+  border-radius: 5px;
+  border-spacing: 0;
+}
+
+.table-1 th {
+  padding: 0 12px;
+  color: whitesmoke;
+  font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+table .fa-caret-down {
+  margin-left: 4px;
+  text-align: center;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.table-1 td {
+  padding: 0 12px;
+  border: 1.5px solid #464646;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.table-1 td:first-child,
+.table-1 td:nth-child(2),
+.table-1 td:last-child {
+  border-bottom-width: 0;
+}
+
+.table-1 td:first-child {
+  color: rgb(210, 210, 210);
+  font-size: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.table-1 th:nth-child(2) {
+  padding: 0;
+}
+
+.table-1 td:nth-child(2) {
+  padding: 0;
+  color: #595959;
+  font-size: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.table-1 .fa-ellipsis {
+  color: #595959;
+}
+
+.table-1 td:last-child {
+  text-align: right;
+}
+
+.table-1 td {
+  width: 50%;
+}
+
+.table-1 th,
+.table-1 td {
+  height: 40px;
+  text-align: left;
+}
+
+.table-2 {
+  width: 60%;
+  margin-bottom: 32px;
+  border: 1.5px solid #464646;
+  border-radius: 5px;
+  border-spacing: 0;
+}
+
+.table-2 th {
+  padding: 0 12px;
+  color: whitesmoke;
+  font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.table-2 td {
+  padding: 0 12px;
+  border: 1.5px solid #464646;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.table-2 td:first-child,
+.table-2 td:nth-child(2),
+.table-2 td:last-child {
+  border-bottom-width: 0;
+}
+
+.table-2 td:first-child {
+  color: rgb(210, 210, 210);
+  font-size: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.table-2 th:nth-child(2) {
+  padding: 0;
+}
+
+.table-2 td:nth-child(2) {
+  padding: 0;
+  color: #595959;
+  font-size: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.table-2 td:last-child {
+  text-align: right;
+}
+
+.table-2 td {
+  width: 50%;
+}
+
+.table-2 th,
+.table-2 td {
+  height: 40px;
+  text-align: left;
+}
+
+.table-2 .fa-ellipsis {
+  cursor: pointer;
+  color: rgb(210, 210, 210);
+}
+
+.checkbox {
+  vertical-align: middle;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.table-3 {
+  width: 60%;
+  margin-bottom: 32px;
+  border: 1.5px solid #464646;
+  border-radius: 5px;
+  border-spacing: 0;
+}
+
+.table-3 th,
+.table-3 td {
+  height: 40px;
+  text-align: left;
+}
+
+.table-3 th {
+  padding: 0 12px;
+  color: whitesmoke;
+  font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.table-3 th:nth-child(2) {
+  padding: 0;
+  padding-left: 4px;
+  width: 18%;
+}
+
+.table-3 th:last-child {
+  padding: 0;
+  padding-right: 4px;
+  width: 35%;
+}
+
+.table-3 td {
+  padding: 0 12px;
+  border: 1.5px solid #464646;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.table-3 td:first-child,
+.table-3 td:nth-child(2),
+.table-3 td:last-child {
+  border-bottom-width: 0;
+}
+
+.table-3 td:first-child {
+  color: rgb(210, 210, 210);
+  font-size: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.table-3 td:nth-child(2) {
+  padding: 0;
+  padding-left: 4px;
+  color: #595959;
+  font-size: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.table-3 td:last-child {
+  text-align: right;
+}
+
+.table-3 .fa-inbox {
+  margin-right: 10px;
+}
+
+.table-3 label {
+  float: right;
+  padding-top: 6px;
+  vertical-align: middle;
+  height: 30px;
+  background-color: #464646;
+  border-radius: 5px;
+  width: auto;
+}
+
+.table-3 input {
+  margin-left: -5px;
+  width: 80%;
+  border: 0;
+  outline: none;
+  background: #464646;
+  color: #828282;
+  font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.fa-magnifying-glass {
+  margin: 0 10px;
+  color: #828282;
+  cursor: pointer;
+}
+
+.table-3 .fa-ellipsis {
+  width: auto;
+cursor: pointer;
+color: rgb(210, 210, 210);
+} 
