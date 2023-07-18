@@ -708,10 +708,6 @@ p {
 }
 
 .contact-us-container button {
-  position: fixed;
-  right: 243px;
-  bottom: 91px;
-  border-radius: 50%;
   border: 0;
   background-color: rgba(255, 255, 255, 1);
   cursor: pointer;
