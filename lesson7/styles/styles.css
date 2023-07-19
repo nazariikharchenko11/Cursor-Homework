@@ -8,11 +8,13 @@
 
 body {
   background: #f6f6f6;
-  width: 100%;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .header {
   width: 1440px;
+  background: #ffffff;
 }
 
 .header__nav {
@@ -73,10 +75,6 @@ body {
   color: #eda3b5;
   margin: 23px 81px 0 0;
 }
-
-/* .nav__ul-3__item-1::before {
-  content: " __ ";
-} */
 
 .nav__ul-3__item-2 {
   margin: 23px 80px 0 0;
