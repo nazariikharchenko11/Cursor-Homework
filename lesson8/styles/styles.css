@@ -11,7 +11,7 @@ body {
 }
 
 .section-1 {
-  width: 40vw;
+  width: 600px;
   margin: 30px auto;
   padding: 30px 0;
   background-color: #fff;
@@ -37,7 +37,7 @@ div:nth-child(24) {
 }
 
 .section-2 {
-  width: 70vw;
+  width: 1200px;
   margin: 30px auto;
   padding: 30px 0;
   background-color: #fff;
