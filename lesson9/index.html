@@ -1,11 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="#" class="header__logo"
+            ><img src="./images/logo.svg" alt="Logo"
+          /></a>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="main-info__block">
+          <div class="main-info__container">
+            <div class="main-info-information">
+              <h1>
+                Get a personalized football experience tailored just for you
+              </h1>
+              <p>
+                Achieve super-fan status by getting tailored updates and
+                up-to-the-minute information on your team.
+              </p>
+              <div class="button__block">
+                <a href="#"
+                  ><img src="./images/apple-store-button.svg" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="./images/google-play-button.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <img
+              class="main-img"
+              src="./images/main-img.png"
+              alt="Main Image"
+              srcset="
+                images/main-img.png   1x,
+                images/main-img2x.png 2x,
+                images/main-img3x.png 3x
+              "
+            />
+          </div>
+        </section>
+
+        <section class="what-it-does__block">
+          <div class="what-it-does__container">
+            <div class="what-it-does-content__block1">
+              <div class="football-matches__wrapper">
+                <div class="matches-block">
+                  <div class="matches-info-block">
+                    <p class="matches-info-block-item1">Sat, 12:35pm</p>
+                    <p class="matches-info-block-item2">
+                      Arsenal v <br />
+                      Chelsea
+                    </p>
+                    <p class="matches-info-block-item3">Friendly Match</p>
+                  </div>
+                  <div class="matches-img-block">
+                    <img
+                      class="matches-img-block-arsenal-logo"
+                      src="./images/arsenal-logo.svg"
+                      alt="Arsenal FC logo"
+                    />
+                    <img
+                      class="matches-img-block-chelsea-logo"
+                      src="./images/chelsea-logo.svg"
+                      alt="Chelsea FC logo"
+                    />
+                  </div>
+                  <div class="matches-notifications-block">
+                    <p>Turn on all match notifications</p>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="matches-video-block">
+                  <img
+                    src="./images/SAMPLE02.png"
+                    alt="Football Highlight Moment"
+                    srcset="
+                      images/SAMPLE02.png    1x,
+                      images/SAMPLE02-2x.png 2x,
+                      images/SAMPLE02-3x.png 3x
+                    "
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="what-it-does-content__block2">
+              <h3>What it does</h3>
+              <h2>An Enhanced Football Experience</h2>
+              <p>
+                The Guardian Live Scores app is your go to app for live scores
+                and watching Premier League goals… Get in there, what a result!
+                <br /><br />
+                As well as videos of all the goals, you can watch match
+                highlights, check out the latest scores and results and stay
+                bang-up-to-date with the big football stories from The Guardian
+                publication.
+              </p>
+              <a class="learn-more" href="#">Learn more</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="get-started__block">
+          <div class="get-started__container">
+            <div class="get-started__content-info">
+              <h3>Get started</h3>
+              <h2>User-friendly Interface</h2>
+              <p>
+                The in-game goal clips from every Premier League match are
+                available to Guardian TV customers with a Guardian subscription.
+                <br /><br />
+                So, if you're not a subscriber, now's the time to make that
+                savvy call. If that's a step too far for you, you can still
+                watch loads of firecracker Premier League action as long as you
+                sign in with a free Guardian iD.
+              </p>
+              <a class="learn-more" href="#">Learn more</a>
+            </div>
+            <div class="get-started__content-app">
+              <img src="./images/mobile-app-phone.png" alt="" />
+              <div class="mobile-app-button1">
+                <a class="notification-button" href="#">
+                  <svg
+                    width="31"
+                    height="37"
+                    viewBox="0 0 31 37"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="notification-icon"
+                      d="M15.5206 36.8687C17.5834 36.8687 19.2712 35.1934 19.2712 33.1457H11.7701C11.7701 35.1934 13.4391 36.8687 15.5206 36.8687ZM26.7722 25.6998V16.3924C26.7722 10.6777 23.6968 5.89366 18.3335 4.62785V3.36205C18.3335 1.81702 17.0771 0.569824 15.5206 0.569824C13.9642 0.569824 12.7077 1.81702 12.7077 3.36205V4.62785C7.32575 5.89366 4.26908 10.6591 4.26908 16.3924V25.6998L0.518555 29.4228V31.2843H30.5227V29.4228L26.7722 25.6998Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="mobile-app-button2">
+                <a class="shopping-cart-button" href="#">
+                  <svg
+                    width="34"
+                    height="34"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="shopping-cart-icon"
+                      d="M10.3126 24.874C8.79845 24.874 7.57338 26.1156 7.57338 27.6331C7.57338 29.1507 8.79845 30.3923 10.3126 30.3923C11.8267 30.3923 13.0655 29.1507 13.0655 27.6331C13.0655 26.1156 11.8267 24.874 10.3126 24.874ZM2.05371 2.80078V5.55993H4.80666L9.76198 16.0309L7.90374 19.4109C7.6835 19.7971 7.55962 20.2524 7.55962 20.7353C7.55962 22.2528 8.79845 23.4944 10.3126 23.4944H26.8303V20.7353H10.8907C10.698 20.7353 10.5466 20.5835 10.5466 20.3904L10.5879 20.2248L11.8267 17.9761H22.0814C23.1138 17.9761 24.0223 17.4105 24.4903 16.5551L29.4181 7.6017C29.5282 7.40856 29.5832 7.17403 29.5832 6.93951C29.5832 6.18074 28.9638 5.55993 28.2068 5.55993H7.84868L6.55479 2.80078H2.05371ZM24.0773 24.874C22.5632 24.874 21.3381 26.1156 21.3381 27.6331C21.3381 29.1507 22.5632 30.3923 24.0773 30.3923C25.5915 30.3923 26.8303 29.1507 26.8303 27.6331C26.8303 26.1156 25.5915 24.874 24.0773 24.874Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="mobile-app-button3">
+                <a class="to-mobile-button" href="#">
+                  <svg
+                    width="48"
+                    height="49"
+                    viewBox="0 0 48 49"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="to-mobile-icon"
+                      d="M32.0342 6.46271L15.3675 6.44604C13.5342 6.44604 12.0342 7.94604 12.0342 9.77938V14.7794H15.3675V13.1127H32.0342V36.446H15.3675V34.7794H12.0342V39.7794C12.0342 41.6127 13.5342 43.1127 15.3675 43.1127H32.0342C33.8675 43.1127 35.3675 41.6127 35.3675 39.7794V9.77938C35.3675 7.94604 33.8675 6.46271 32.0342 6.46271ZM18.7008 29.7794H22.0342V18.1127H10.3675V21.446H16.3508L7.03418 30.7627L9.38418 33.1127L18.7008 23.796V29.7794Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="features__block">
+          <h2>Features That Will Tailor Your Experience</h2>
+          <div class="features-block__container">
+            <div class="features-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  class="ondemand_video-icon"
+                  d="M35.0003 5H5.00033C3.15033 5 1.66699 6.48333 1.66699 8.33333V28.3333C1.66699 30.1667 3.15033 31.6667 5.00033 31.6667H13.3337V35H26.667V31.6667H35.0003C36.8337 31.6667 38.317 30.1667 38.317 28.3333L38.3337 8.33333C38.3337 6.48333 36.8337 5 35.0003 5ZM35.0003 28.3333H5.00033V8.33333H35.0003V28.3333ZM26.667 18.3333L15.0003 25V11.6667L26.667 18.3333Z"
+                />
+              </svg>
+              <ul>
+                <li>
+                  Video highlights for every Premier League and English Football
+                  League game
+                </li>
+              </ul>
+            </div>
+            <div class="features-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  d="M12.6338 6.79996L10.2505 4.41663C6.25046 7.46663 3.61712 12.1666 3.38379 17.5H6.71712C6.96712 13.0833 9.23379 9.21663 12.6338 6.79996ZM33.2838 17.5H36.6171C36.3671 12.1666 33.7338 7.46663 29.7505 4.41663L27.3838 6.79996C30.7505 9.21663 33.0338 13.0833 33.2838 17.5ZM30.0005 18.3333C30.0005 13.2166 27.2671 8.93329 22.5005 7.79996V6.66663C22.5005 5.28329 21.3838 4.16663 20.0005 4.16663C18.6171 4.16663 17.5005 5.28329 17.5005 6.66663V7.79996C12.7171 8.93329 10.0005 13.2 10.0005 18.3333V26.6666L6.66712 30V31.6666H33.3338V30L30.0005 26.6666V18.3333ZM20.0005 36.6666C20.2338 36.6666 20.4505 36.65 20.6671 36.6C21.7505 36.3666 22.6338 35.6333 23.0671 34.6333C23.2338 34.2333 23.3171 33.8 23.3171 33.3333H16.6505C16.6671 35.1666 18.1505 36.6666 20.0005 36.6666Z"
+                />
+              </svg>
+              <ul>
+                <li>
+                  Notifications for your teams, including in-game goal clips and
+                  Premier League match highlights for Sky TV subscribers with
+                  Guardian
+                </li>
+              </ul>
+            </div>
+            <div class="features-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  d="M31.6667 5H8.33333C6.48333 5 5 6.5 5 8.33333V31.6667C5 33.5 6.48333 35 8.33333 35H31.6667C33.5 35 35 33.5 35 31.6667V8.33333C35 6.5 33.5 5 31.6667 5ZM18.3333 25H15.8333V21.6667H12.5V25H10V15H12.5V19.1667H15.8333V15H18.3333V25ZM21.6667 15H28.3333C29.25 15 30 15.75 30 16.6667V23.3333C30 24.25 29.25 25 28.3333 25H21.6667V15ZM24.1667 22.5H27.5V17.5H24.1667V22.5Z"
+                />
+              </svg>
+              <ul>
+                <li>
+                  Brand new video section including dedicated areas for your
+                  chosen team, trending video, Premier League, Football league
+                  and other major leagues
+                </li>
+              </ul>
+            </div>
+            <div class="features-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  d="M23.9997 9.99996L23.333 6.66663H8.33301V35H11.6663V23.3333H20.9997L21.6663 26.6666H33.333V9.99996H23.9997Z"
+                />
+              </svg>
+              <ul>
+                <li>
+                  Match pages showing live scores, commentary, team line-ups and
+                  enhanced match stats to keep you up-to-date on all the action
+                </li>
+              </ul>
+            </div>
+            <div class="features-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  d="M4.21642 32.7499L6.44976 33.6833V18.6333L2.39976 28.3999C1.71643 30.0999 2.53309 32.0499 4.21642 32.7499ZM36.7164 26.5833L28.4498 6.63325C27.9331 5.38325 26.7164 4.61659 25.4331 4.58325C24.9998 4.58325 24.5498 4.64992 24.1164 4.83325L11.8331 9.91658C10.5831 10.4333 9.81642 11.6333 9.78309 12.9166C9.76642 13.3666 9.84976 13.8166 10.0331 14.2499L18.2998 34.1999C18.8164 35.4666 20.0498 36.2333 21.3498 36.2499C21.7831 36.2499 22.2164 36.1666 22.6331 35.9999L34.8998 30.9166C36.5998 30.2166 37.4164 28.2666 36.7164 26.5833ZM13.1331 14.5833C12.2164 14.5833 11.4664 13.8333 11.4664 12.9166C11.4664 11.9999 12.2164 11.2499 13.1331 11.2499C14.0498 11.2499 14.7998 11.9999 14.7998 12.9166C14.7998 13.8333 14.0498 14.5833 13.1331 14.5833ZM9.79976 32.9166C9.79976 34.7499 11.2998 36.2499 13.1331 36.2499H15.5498L9.79976 22.3499V32.9166Z"
+                />
+              </svg>
+              <ul>
+                <li>
+                  The new picture in picture video mode means you can watch
+                  goals, manager interviews and more whilst using other areas of
+                  the app - so you don't need to miss any of the action
+                </li>
+              </ul>
+            </div>
+            <div class="features-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  d="M31.6667 5H8.33333C6.5 5 5 6.5 5 8.33333V31.6667C5 33.5 6.5 35 8.33333 35H31.6667C33.5 35 35 33.5 35 31.6667V8.33333C35 6.5 33.5 5 31.6667 5ZM15 28.3333H11.6667V16.6667H15V28.3333ZM21.6667 28.3333H18.3333V11.6667H21.6667V28.3333ZM28.3333 28.3333H25V21.6667H28.3333V28.3333Z"
+                />
+              </svg>
+              <ul>
+                <li>
+                  Live updated league tables including all the domestic,
+                  European and major leagues and tournaments
+                </li>
+              </ul>
+            </div>
+            <div class="features-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  d="M30 1.68335L13.3333 1.66669C11.5 1.66669 10 3.16669 10 5.00002V10H13.3333V8.33335H30V31.6667H13.3333V30H10V35C10 36.8334 11.5 38.3334 13.3333 38.3334H30C31.8333 38.3334 33.3333 36.8334 33.3333 35V5.00002C33.3333 3.16669 31.8333 1.68335 30 1.68335ZM16.6667 25H20V13.3334H8.33333V16.6667H14.3167L5 25.9834L7.35 28.3334L16.6667 19.0167V25Z"
+                />
+              </svg>
+              <ul>
+                <li>
+                  The Guardian News Vidiprinter. Follow the goals as they go in
+                  with our new and improved Vidiprinter
+                </li>
+              </ul>
+            </div>
+            <div class="features-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  d="M26.667 18.3333C29.4337 18.3333 31.6503 16.1 31.6503 13.3333C31.6503 10.5666 29.4337 8.33331 26.667 8.33331C23.9003 8.33331 21.667 10.5666 21.667 13.3333C21.667 16.1 23.9003 18.3333 26.667 18.3333ZM13.3337 18.3333C16.1003 18.3333 18.317 16.1 18.317 13.3333C18.317 10.5666 16.1003 8.33331 13.3337 8.33331C10.567 8.33331 8.33366 10.5666 8.33366 13.3333C8.33366 16.1 10.567 18.3333 13.3337 18.3333ZM13.3337 21.6666C9.45033 21.6666 1.66699 23.6166 1.66699 27.5V31.6666H25.0003V27.5C25.0003 23.6166 17.217 21.6666 13.3337 21.6666ZM26.667 21.6666C26.1837 21.6666 25.6337 21.7 25.0503 21.75C26.9837 23.15 28.3337 25.0333 28.3337 27.5V31.6666H38.3337V27.5C38.3337 23.6166 30.5503 21.6666 26.667 21.6666Z"
+                />
+              </svg>
+              <ul>
+                <li>Match reports, previews and a dedicated news section</li>
+              </ul>
+            </div>
+            <div class="features-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  d="M5 28.3333V31.6667H15V28.3333H5ZM5 8.33333V11.6667H21.6667V8.33333H5ZM21.6667 35V31.6667H35V28.3333H21.6667V25H18.3333V35H21.6667ZM11.6667 15V18.3333H5V21.6667H11.6667V25H15V15H11.6667ZM35 21.6667V18.3333H18.3333V21.6667H35ZM25 15H28.3333V11.6667H35V8.33333H28.3333V5H25V15Z"
+                />
+              </svg>
+              <ul>
+                <li>
+                  And you can achieve super-fan status by personalising your
+                  home page with up-to-the-minute information on your team.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews__block">
+          <h2>What Our Users Say</h2>
+          <img
+            class="slider-left-arrow"
+            src="./images/slider-right-arrow.svg"
+            alt="slider-left-arrow"
+          />
+          <img
+            class="slider-right-arrow"
+            src="./images/slider-right-arrow.svg"
+            alt="slider-rigth-arrow"
+          />
+          <div class="rewievs__block-container">
+            <div class="review-item item-1">
+              <img src="./images/Group 699.3.png" alt="" />
+            </div>
+            <div class="reviews-item item-2">
+              <div class="reviews-block-username">
+                <img src="./images/user-photo1.png" alt="User Photo" />
+                <span>Noah Jackson</span>
+              </div>
+              <div class="reviews-block-twitter-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="12"
+                  viewBox="0 0 15 12"
+                  fill="none"
+                >
+                  <path
+                    class="twitter-icon"
+                    d="M15 1.42062C14.4422 1.66154 13.8478 1.82123 13.2281 1.89877C13.8656 1.524 14.3522 0.935077 14.5809 0.225231C13.9866 0.574154 13.3303 0.820615 12.6309 0.958154C12.0666 0.366462 11.2622 0 10.3847 0C8.68219 0 7.31156 1.36062 7.31156 3.02862C7.31156 3.26862 7.33219 3.49938 7.38281 3.71908C4.82625 3.59631 2.56406 2.38985 1.04437 0.552C0.779062 1.00523 0.623438 1.524 0.623438 2.08246C0.623438 3.13108 1.17188 4.06062 1.98937 4.59877C1.49531 4.58954 1.01063 4.44831 0.6 4.22585C0.6 4.23508 0.6 4.24708 0.6 4.25908C0.6 5.73046 1.66594 6.95262 3.06375 7.23415C2.81344 7.30154 2.54063 7.33385 2.2575 7.33385C2.06063 7.33385 1.86187 7.32277 1.67531 7.28215C2.07375 8.48123 3.20438 9.36277 4.54875 9.39138C3.5025 10.1972 2.17406 10.6828 0.735938 10.6828C0.48375 10.6828 0.241875 10.6717 0 10.6412C1.36219 11.5062 2.97656 12 4.7175 12C10.3763 12 13.47 7.38462 13.47 3.384C13.47 3.25015 13.4653 3.12092 13.4587 2.99262C14.0691 2.56615 14.5819 2.03354 15 1.42062Z"
+                  />
+                </svg>
+              </div>
+              <div class="reviews-block-text">
+                <p>
+                  I use this app every day and it's a great way to keep up to
+                  date with what's going on in football. It's a shame it won't
+                  rotate into landscape mode like its main competitor
+                </p>
+              </div>
+            </div>
+            <div class="reviews-item item-3">
+              <div class="reviews-block-username">
+                <img src="./images/user-photo.svg" alt="User Photo" />
+                <span>Darren Wilson</span>
+              </div>
+              <div class="reviews-block-twitter-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="12"
+                  viewBox="0 0 15 12"
+                  fill="none"
+                >
+                  <path
+                    class="twitter-icon"
+                    d="M15 1.42062C14.4422 1.66154 13.8478 1.82123 13.2281 1.89877C13.8656 1.524 14.3522 0.935077 14.5809 0.225231C13.9866 0.574154 13.3303 0.820615 12.6309 0.958154C12.0666 0.366462 11.2622 0 10.3847 0C8.68219 0 7.31156 1.36062 7.31156 3.02862C7.31156 3.26862 7.33219 3.49938 7.38281 3.71908C4.82625 3.59631 2.56406 2.38985 1.04437 0.552C0.779062 1.00523 0.623438 1.524 0.623438 2.08246C0.623438 3.13108 1.17188 4.06062 1.98937 4.59877C1.49531 4.58954 1.01063 4.44831 0.6 4.22585C0.6 4.23508 0.6 4.24708 0.6 4.25908C0.6 5.73046 1.66594 6.95262 3.06375 7.23415C2.81344 7.30154 2.54063 7.33385 2.2575 7.33385C2.06063 7.33385 1.86187 7.32277 1.67531 7.28215C2.07375 8.48123 3.20438 9.36277 4.54875 9.39138C3.5025 10.1972 2.17406 10.6828 0.735938 10.6828C0.48375 10.6828 0.241875 10.6717 0 10.6412C1.36219 11.5062 2.97656 12 4.7175 12C10.3763 12 13.47 7.38462 13.47 3.384C13.47 3.25015 13.4653 3.12092 13.4587 2.99262C14.0691 2.56615 14.5819 2.03354 15 1.42062Z"
+                  />
+                </svg>
+              </div>
+              <div class="reviews-block-text">
+                <p>
+                  Good for scores and commentary but the <br />
+                  team lineups have stopped working.
+                </p>
+              </div>
+            </div>
+            <div class="reviews-item item-4">
+              <div class="reviews-block-username">
+                <img src="./images/user-photo2.png" alt="User Photo" />
+                <span>Michael Akinuli</span>
+              </div>
+              <div class="reviews-block-twitter-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="12"
+                  viewBox="0 0 15 12"
+                  fill="none"
+                >
+                  <path
+                    class="twitter-icon"
+                    d="M15 1.42062C14.4422 1.66154 13.8478 1.82123 13.2281 1.89877C13.8656 1.524 14.3522 0.935077 14.5809 0.225231C13.9866 0.574154 13.3303 0.820615 12.6309 0.958154C12.0666 0.366462 11.2622 0 10.3847 0C8.68219 0 7.31156 1.36062 7.31156 3.02862C7.31156 3.26862 7.33219 3.49938 7.38281 3.71908C4.82625 3.59631 2.56406 2.38985 1.04437 0.552C0.779062 1.00523 0.623438 1.524 0.623438 2.08246C0.623438 3.13108 1.17188 4.06062 1.98937 4.59877C1.49531 4.58954 1.01063 4.44831 0.6 4.22585C0.6 4.23508 0.6 4.24708 0.6 4.25908C0.6 5.73046 1.66594 6.95262 3.06375 7.23415C2.81344 7.30154 2.54063 7.33385 2.2575 7.33385C2.06063 7.33385 1.86187 7.32277 1.67531 7.28215C2.07375 8.48123 3.20438 9.36277 4.54875 9.39138C3.5025 10.1972 2.17406 10.6828 0.735938 10.6828C0.48375 10.6828 0.241875 10.6717 0 10.6412C1.36219 11.5062 2.97656 12 4.7175 12C10.3763 12 13.47 7.38462 13.47 3.384C13.47 3.25015 13.4653 3.12092 13.4587 2.99262C14.0691 2.56615 14.5819 2.03354 15 1.42062Z"
+                  />
+                </svg>
+              </div>
+              <div class="reviews-block-text">
+                <p>
+                  Good for watching the goals and great for highlights instead
+                  of waiting till 10:30 before you can watch highlights on March
+                  of the day also no need of sky go
+                </p>
+              </div>
+            </div>
+            <div class="reviews-item item-5">
+              <img src="./images/Group 699.1.png" alt="" />
+            </div>
+          </div>
+          <img class="dots-img" src="./images/dots.svg" alt="Dots" />
+        </section>
+
+        <section class="companies__block">
+          <div class="companies__container">
+            <h2>We have been featured in</h2>
+            <div class="companies-logos-block">
+              <img
+                class="companies-logos-block-item1"
+                src="./images/sportsTV-logo.svg"
+                alt="Sports TV logo"
+              />
+              <img
+                class="companies-logos-block-item2"
+                src="./images/sports-logo.svg"
+                alt="Sports logo"
+              />
+              <img
+                class="companies-logos-block-item3"
+                src="./images/nbc-sports-logo.svg"
+                alt="NBC Sports logo"
+              />
+              <img
+                class="companies-logos-block-item4"
+                src="./images/designer-technology-logo.svg"
+                alt="Designer Technology logo"
+              />
+              <img
+                class="companies-logos-block-item5"
+                src="./images/designer-news-logo.svg"
+                alt="Designer News logo"
+              />
+              <img
+                class="companies-logos-block-item6"
+                src="./images/sky-sports-logo.svg"
+                alt="Sky Sports logo"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="get-up__block">
+          <div class="get-up__content">
+            <div class="get-up__container">
+              <div class="get-up__body">
+                <h2>
+                  Get Up Close With Your Team
+                </h2>
+                <p>
+                  If you're interested in the scores of more than one team (it's
+                  OK, we won't tell your mates you support two clubs!), you can
+                  choose the scores and competitions that matter to you using
+                  the ‘My Scores’ section. <br />
+                  So, make sure you're a top-flight football fan by downloading
+                  the Football Score Centre now. It's got all this:
+                </p>
+                <div class="button__block">
+                  <a href="#"
+                    ><img src="./images/apple-store-button.svg" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="./images/google-play-button.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="get-up__image">
+            <img
+              src="./images/get-up-container-img.jpg"
+              alt=""
+              srcset="
+                images/get-up-container-img.jpg   1x,
+                images/get-up-container-img2x.jpg 2x,
+                images/get-up-container-img3x.jpg 3x
+              "
+            />
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <img class="footer-logo" src="./images/footer-logo.svg" alt="Logo" />
+          <div class="social-media-block">
+            <a href="#">
+              <img src="./images/footer-twitter-logo.svg" alt="Twitter Logo">
+            </a>
+            <a href="#">
+              <img src="./images/footer-fb-lofo.svg" alt="Facebook Logo">
+            </a>
+            <a href="#">
+             <img src="./images/footer-ig-logo.svg" alt="Instagram Logo">
+            </a>
+          </div>
+          <ul>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
