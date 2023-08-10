@@ -1,0 +1,309 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ========================================================= */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+  overflow: hidden;
+}
+/* ========================================================= */
+.wrapper__container-1 {
+  position: relative;
+  width: 1280px;
+  height: 700px;
+  margin-top: 50px;
+  background-image: url(..//img/wrapper-block-1-background.jpg);
+  background-size: cover;
+}
+.wrapper__container-1__block-1 {
+  display: flex;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.block-1_sword,
+.block-2_sword {
+  width: 500px;
+  height: 50px;
+  border-radius: 0 32px 32px 0;
+  background: grey;
+}
+.sword-hilt {
+  width: 130px;
+  height: 50px;
+  background: rgb(42, 41, 41);
+}
+.sword-1 {
+  animation: sword-1 2s ease-in-out 0.5s forwards;
+}
+.hilt-1 {
+  border-radius: 32px 0 0 32px;
+}
+@keyframes sword-1 {
+  0% {
+    background: grey;
+    box-shadow: 0 0 10px rgba(114, 255, 114, 0.5);
+  }
+  50% {
+    border: 1.5px solid rgba(156, 255, 156, 0.7);
+  }
+  75% {
+    border: 2px solid rgba(156, 255, 156, 0.7);
+  }
+  100% {
+    background: rgb(114, 255, 114);
+    box-shadow: 10px 0 50px rgba(114, 255, 114, 0.8),
+      10px 0 70px rgba(114, 255, 114, 0.6);
+    border: 3px solid rgba(156, 255, 156, 0.7);
+  }
+}
+/* ========================================================= */
+.wrapper__container-1__block-2 {
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-25%, 0);
+}
+/* ========================================================= */
+.container-1__block-2__sword-block-1 {
+  display: flex;
+  position: absolute;
+  animation: container-1__block-2__sword-block-1 7s 2.5s infinite;
+}
+@keyframes container-1__block-2__sword-block-1 {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.sword-2 {
+  border-radius: 32px 0 0 32px;
+  animation: sword-2 2s ease-in-out 0.5s forwards;
+}
+.hilt-2 {
+  border-radius: 0 32px 32px 0;
+}
+@keyframes sword-2 {
+  0% {
+    background: grey;
+    box-shadow: 0 0 10px rgba(50, 53, 215, 0.5);
+  }
+  50% {
+    border: 1.5px solid rgba(64, 67, 218, 0.7);
+  }
+  75% {
+    border: 2px solid rgba(64, 67, 218, 0.7);
+  }
+  100% {
+    background: rgb(50, 53, 215);
+    box-shadow: -15px 0 70px rgba(50, 53, 215, 0.8),
+      -15px 0 90px rgba(50, 53, 215, 0.6);
+    border: 3px solid rgba(64, 67, 218, 0.7);
+  }
+}
+/* ========================================================= */
+.container-1__block-2__sword-block-2 {
+  display: flex;
+  position: absolute;
+  animation: container-1__block-2__sword-block-2 7s 2.5s infinite;
+}
+@keyframes container-1__block-2__sword-block-2 {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-35deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.hilt-3 {
+  border-radius: 32px 0 0 32px;
+}
+.sword-3 {
+  animation: sword-3 2s ease-in-out 0.5s forwards;
+}
+@keyframes sword-3 {
+  0% {
+    background: grey;
+    box-shadow: 0 0 10px rgba(255, 49, 49, 0.5);
+  }
+  50% {
+    border: 1.5px solid rgba(251, 67, 67, 0.7);
+  }
+  75% {
+    border: 2px solid rgba(251, 67, 67, 0.7);
+  }
+  100% {
+    background: rgb(255, 49, 49);
+    box-shadow: 10px 0 50px rgba(255, 49, 49, 0.8),
+      10px 0 70px rgba(255, 49, 49, 0.6);
+    border: 3px solid rgba(252, 76, 76, 0.7);
+  }
+}
+/* ================================================== */
+.wrapper__container-2 {
+  position: relative;
+  width: 1280px;
+  height: 400px;
+  margin-bottom: 50px;
+  background: linear-gradient(#2ca9db, #87ceeb);
+}
+.container-2__item-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 490px;
+  height: 200px;
+  margin: auto;
+  border-top: 30px solid #000;
+  border-radius: 15px;
+}
+.container-2__item {
+  position: relative;
+  width: 3px;
+  height: 100%;
+  background-color: #e3e3e3;
+  transform-origin: top;
+  background-color: #000;
+}
+.container-2__item::after {
+  position: absolute;
+  bottom: -70px;
+  left: -33px;
+  content: "";
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+/* ================================================== */
+.container-2__item:first-child {
+  animation: item-1 3s linear infinite;
+}
+@keyframes item-1 {
+  25% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.container-2__item:last-child {
+  animation: item-7 3s linear 1.5s infinite;
+}
+@keyframes item-7 {
+  25% {
+    transform: rotate(-50deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+/* ================================================== */
+.item-1::after {
+  background-color: #4169e1;
+}
+.item-2::after {
+  animation: item-2 3s 1.5s infinite;
+}
+.item-3::after {
+  animation: item-3 3s 1.5s infinite;
+}
+.item-4::after {
+  background: linear-gradient(0.25turn, #93a2e9, #8fca97);
+}
+.item-5::after {
+  animation: item-5 3s 3s infinite;
+}
+.item-6::after {
+  animation: item-6 3s 3s infinite;
+}
+.item-7::after {
+  background: linear-gradient(0.25turn, #389f46, #308b3c);
+}
+/* ================================================== */
+@keyframes item-2 {
+  25% {
+    background: linear-gradient(0.25turn, #4169e1, #677ad7);
+  }
+  50% {
+    background: linear-gradient(0.25turn, #4169e1, #677ad7);
+  }
+  75% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+
+@keyframes item-3 {
+  25% {
+    background: linear-gradient(0.25turn, #677ad7, #93a2e9);
+  }
+  50% {
+    background: linear-gradient(0.25turn, #677ad7, #93a2e9);
+  }
+  75% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+
+@keyframes item-5 {
+  25% {
+    background: linear-gradient(0.25turn, #8fca97, #66d675);
+  }
+  50% {
+    background: linear-gradient(0.25turn, #8fca97, #66d675);
+  }
+  75% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+
+@keyframes item-6 {
+  25% {
+    background: linear-gradient(0.25turn, #66d675, #389f46);
+  }
+  50% {
+    background: linear-gradient(0.25turn, #66d675, #389f46);
+  }
+  75% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
