@@ -1,11 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="./img/logo.svg" alt="Instadram logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><img src="./img/home-icon.svg" alt="Home icon"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link direct-icon" href="#"
+                  ><img src="./img/direct-icon.svg" alt="Messages icon"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="./img/recommendations-icon.svg"
+                    alt="Recommendations icon"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="./img/notification-icon.svg"
+                    alt="Notifications icon"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="./img/user-photo.svg" alt="User Photo"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="user-info container">
+        <div class="row">
+          <div class="user-photo-block col-4">
+            <div class="user-photo"></div>
+          </div>
+          <div class="col-8">
+            <div class="row">
+              <div class="user-nickname-block col-12">
+                <a class="user-nickname" href="#">name</a>
+                <div class="follow-block">
+                  <button type="button" class="follow-button btn btn-primary">
+                    Follow
+                  </button>
+                  <div class="dropdown">
+                    <a
+                      class="dropdown-menu-button btn btn-secondary dropdown-toggle"
+                      href="#"
+                      role="button"
+                      id="dropdownMenuLink"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                    </a>
+
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuLink"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-three-dots"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="followers-block col-12">
+                <p>79 posts</p>
+                <p>379 followers</p>
+                <p>179 following</p>
+              </div>
+              <div class="about-user-block col-12">
+                <p class="user-name">Name</p>
+                <p class="user-bio">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text.
+                </p>
+                <a href="bit.ly/35Ce3mX">bit.ly/35Ce3mX</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="stories-container row pt-3 pt-sm-4 pt-md-5 pt-xl-5 pt-xxl-5"
+        >
+          <div class="stories-block col-12">
+            <div class="stories-block-wrap">
+              <div class="stories-block-item item-1">
+                <div
+                  class="stories-block-item-background background-item-1"
+                ></div>
+              </div>
+              Name
+            </div>
+            <div class="stories-block-wrap">
+              <div class="stories-block-item item-2">
+                <div
+                  class="stories-block-item-background background-item-2"
+                ></div>
+              </div>
+              Name
+            </div>
+            <div class="stories-block-wrap">
+              <div class="stories-block-item item-3">
+                <div
+                  class="stories-block-item-background background-item-3"
+                ></div>
+              </div>
+              Name
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <setion class="posts container">
+        <div class="posts-block justify-content-center gap-4 gap-sm-5 gap-md-5 gap-lg-5 gap-xl-5 gap-xxl-5">
+          <div class="posts-block-buttons button-1">
+            <a href="#">
+              <svg
+                width="11"
+                height="11"
+                viewBox="0 0 11 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="posts-icon"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.6333 0H0.366667C0.171111 0 0 0.171111 0 0.366667V10.6333C0 10.8289 0.171111 11 0.366667 11H10.6333C10.8289 11 11 10.8289 11 10.6333V0.366667C11 0.171111 10.8289 0 10.6333 0ZM0.733333 0.733333H3.42222V3.42222H0.733333V0.733333ZM0.733333 4.15556H3.42222V6.84444H0.733333V4.15556ZM3.42222 10.2667H0.733333V7.57778H3.42222V10.2667ZM6.84444 10.2667H4.15556V7.57778H6.84444V10.2667ZM6.84444 6.84444H4.15556V4.15556H6.84444V6.84444ZM6.84444 3.42222H4.15556V0.733333H6.84444V3.42222ZM10.2667 10.2667H7.57778V7.57778H10.2667V10.2667ZM10.2667 6.84444H7.57778V4.15556H10.2667V6.84444ZM10.2667 3.42222H7.57778V0.733333H10.2667V3.42222Z"
+                />
+              </svg>
+              posts
+            </a>
+          </div>
+          <div class="posts-block-buttons button-2">
+            <a href="#">
+              <svg
+                width="11"
+                height="11"
+                viewBox="0 0 11 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="tagged-icon"
+                  d="M9.59575 1.18066H6.99787C6.88085 1.18066 6.76383 1.1339 6.67021 1.04038L5.73404 0.105207C5.59362 -0.0350691 5.38298 -0.0350691 5.24255 0.105207L4.30638 1.04038C4.21277 1.1339 4.09574 1.18066 3.97872 1.18066H1.40426C0.631915 1.18066 0 1.8119 0 2.58342V9.59724C0 10.3688 0.631915 11 1.40426 11H9.59575C10.3681 11 11 10.3688 11 9.59724V2.58342C11 1.8119 10.3681 1.18066 9.59575 1.18066ZM2.71489 10.2986C2.57447 10.2986 2.45745 10.1583 2.48085 10.0181C2.64468 9.26993 3.3 8.70882 4.07234 8.70882H6.88085C7.6766 8.70882 8.33191 9.26993 8.47234 10.0181C8.49574 10.1583 8.37872 10.2986 8.2383 10.2986H2.71489ZM10.2979 9.59724C10.2979 9.99469 9.99362 10.2986 9.59575 10.2986H9.45532C9.3383 10.2986 9.24468 10.2051 9.22128 10.0882C9.08085 8.91923 8.09787 8.00744 6.90426 8.00744H4.09574C2.90213 8.00744 1.89574 8.91923 1.77872 10.0882C1.75532 10.2051 1.6617 10.2986 1.54468 10.2986H1.40426C1.00638 10.2986 0.702128 9.99469 0.702128 9.59724V2.58342C0.702128 2.18597 1.00638 1.88204 1.40426 1.88204H4.00213C4.30638 1.88204 4.61064 1.76514 4.82128 1.53135L5.5 0.853347L6.17872 1.53135C6.38936 1.74176 6.69362 1.88204 6.99787 1.88204H9.59575C9.99362 1.88204 10.2979 2.18597 10.2979 2.58342V9.59724ZM5.5 2.81722C4.25957 2.81722 3.25319 3.82253 3.25319 5.06164C3.25319 6.30074 4.25957 7.30606 5.5 7.30606C6.74043 7.30606 7.74681 6.30074 7.74681 5.06164C7.74681 3.82253 6.74043 2.81722 5.5 2.81722ZM5.5 6.5813C4.65745 6.5813 3.95532 5.90329 3.95532 5.03826C3.95532 4.1966 4.63404 3.49522 5.5 3.49522C6.36596 3.49522 7.04468 4.17322 7.04468 5.03826C7.04468 5.87991 6.34255 6.5813 5.5 6.5813Z"
+                />
+              </svg>
+              tagged
+            </a>
+          </div>
+        </div>
+        <div class="user-posts container">
+          <div class="user-posts-block row row-gap-4 pt-4">
+            <div class="user-posts-item col-4">
+              <img src="./img/posts-img.png" alt="" />
+            </div>
+            <div class="user-posts-item col-4">
+              <img src="./img/posts-img.png" alt="" />
+            </div>
+            <div class="user-posts-item col-4">
+              <img src="./img/posts-img.png" alt="" />
+            </div>
+            <div class="user-posts-item col-4">
+              <img src="./img/posts-img.png" alt="" />
+            </div>
+            <div class="user-posts-item col-4">
+              <img src="./img/posts-img.png" alt="" />
+            </div>
+            <div class="user-posts-item col-4">
+              <img src="./img/posts-img.png" alt="" />
+            </div>
+            <div class="user-posts-item col-4">
+              <img src="./img/posts-img.png" alt="" />
+            </div>
+            <div class="user-posts-item col-4">
+              <img src="./img/posts-img.png" alt="" />
+            </div>
+            <div class="user-posts-item col-4">
+              <img src="./img/posts-img.png" alt="" />
+            </div>
+            <div class="user-posts-item col-4">
+              <img src="./img/posts-img.png" alt="" />
+            </div>
+            <div class="user-posts-item col-4">
+              <img src="./img/posts-img.png" alt="" />
+            </div>
+            <div class="user-posts-item col-4">
+              <img src="./img/posts-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </setion>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
